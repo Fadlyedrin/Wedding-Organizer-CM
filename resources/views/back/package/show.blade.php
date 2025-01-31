@@ -5,14 +5,14 @@
 
     <!-- content-->
     <main>
-    <h1 class="mt-4">Package</h1>
-    <ol class="breadcrumb mb-4 active">
-        <li>Detail Package</li>
-    </ol>
+        <h1 class="mt-4">Package</h1>
+        <ol class="breadcrumb mb-4 active">
+            <li>Detail Package</li>
+        </ol>
 
-      <div class="mt-3">
+        <div class="mt-3">
 
-        <table class="table table-striped table-bordered">
+            <table class="table table-striped table-bordered">
                 <tr>
                     <th width="300px">Name</th>
                     <td>{{ $package->name }}</td>
@@ -35,14 +35,12 @@
                         <img src="{{ asset('storage/back/' . $package->image) }}" alt="Package Image" width="30%">
                     </td>
                 </tr>
-        </table>
+            </table>
 
-        <div class="text-center">
-            <a href="{{ url('admin/packages') }}" class="btn btn-secondary">Back</a>
+            <div class="text-center">
+                <a href="{{ url('admin/packages') }}" class="btn btn-secondary">Back</a>
+            </div>
         </div>
-      </div>
 
     </main>
 @endsection
-
-

@@ -1,6 +1,6 @@
 <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
     <a class="navbar-brand ps-3" href="{{ url('admin/dashboard') }}">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/768px-LEGO_logo.svg.png" width="30" height="30" class="d-inline-block align-top me-2" alt="">Admin Sanggar</a>
+        <img src="{{ asset('front/img/logo.png') }}" width="30" height="30" class="d-inline-block align-top me-2" alt="">Admin Sanggar</a>
 
     <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle">
         <i class="fas fa-bars"></i>
