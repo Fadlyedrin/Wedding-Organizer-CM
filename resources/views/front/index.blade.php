@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Home')
 
 @section('content')
     <section class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
@@ -483,57 +484,6 @@
             d="M0,192L48,208C96,224,192,256,288,250.7C384,245,480,203,576,197.3C672,192,768,224,864,240C960,256,1056,256,1152,234.7C1248,213,1344,171,1392,149.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
           ></path>
         </svg> -->
-
-        <section class="sub-footer ">
-            <div class="container ">
-                <div class="row justify-content-between pt-5">
-                    <!-- <div class="col-lg-3 mb-4">
-                <h4>Package</h4>
-                <a href="akad-package.html" class="text-decoration-none"
-                  >Akad Package</a
-                ><br />
-                <a href="jasmine-package.html" class="text-decoration-none"
-                  >Jasmine package</a
-                ><br />
-                <a href="rose-package.html" class="text-decoration-none"
-                  >Rose Package</a
-                ><br />
-                <a href="edelweiss_package.html" class="text-decoration-none"
-                  >Edelweiss Package</a
-                ><br />
-                <a href="orchid-package.html" class="text-decoration-none"
-                  >Orchid Package</a
-                ><br />
-                <a href="cherry-blossom-package.html" class="text-decoration-none"
-                  >Cherry Blossom Package</a
-                >
-              </div> -->
-                    <div class="col-lg-3 mb-4 ">
-                        <h4>Quick Links</h4>
-                        <a href="#scrollHome" class="text-decoration-none">Home</a><br />
-                        <a href="#scrollAbout" class="text-decoration-none">About Us</a><br />
-                        <a href="#scrollGallery" class="text-decoration-none">Gallery</a><br />
-                        <a href="#scrollPackage" class="text-decoration-none">Package</a><br />
-                        <a href="#scrollLocation" class="text-decoration-none">Location</a>
-                    </div>
-                    <div class="col-lg-3 mb-4">
-                        <h4>Contact Info</h4>
-                        <span href="" class="text-decoration-none"><i class="fa-solid fa-phone"></i>
-                            0812-8997-5343 (Admin)</span><br />
-                        <a href="#scrollLocation" class="text-decoration-none"><i class="fa-solid fa-location-dot"></i>
-                            Jl. Komp. Villa Ciomas,
-                            Ciomas Rahayu, Kec. Ciomas, Kabupaten Bogor, Jawa Barat 16610</a><br />
-                        <span class="text-decoration-none"><i class="fa-solid fa-envelope"></i>
-                            arunikawedding@gmail.com</span><br />
-                    </div>
-                    <div class="col-lg-3 mb-4">
-                        <h4>Follow Us</h4>
-                        <a href="https://www.instagram.com/sanggarcahayaminang" class="text-decoration-none"><i
-                                class="fa-brands fa-square-instagram"></i> Instagram</a><br />
-                    </div>
-                </div>
-            </div>
-        </section>
 
 
 

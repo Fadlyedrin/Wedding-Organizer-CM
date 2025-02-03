@@ -12,16 +12,16 @@
          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
              <ul class="navbar-nav mx-auto">
                  <li class="nav-item mx-3">
-                     <a class="nav-link active nav-top" aria-current="page" href="index.html">Home</a>
+                     <a class="nav-link nav-top {{ request()->is('/') ? 'active' : '' }}"  aria-current="page" href="{{ route('dashboard') }}">Home</a>
                  </li>
                  <li class="nav-item mx-3">
-                     <a class="nav-link nav-top" href="about.html">About Us</a>
+                     <a class="nav-link nav-top {{ request()->is('about') ? 'active' : '' }}"  href="{{ route('about') }}">About Us</a>
                  </li>
                  <li class="nav-item mx-3">
-                     <a class="nav-link nav-top" href="gallery.html">Gallery</a>
+                     <a class="nav-link nav-top {{ request()->is('gallery') ? 'active' : '' }}"  href="{{ route( 'gallery') }}">Gallery</a>
                  </li>
                  <li class="nav-item mx-3">
-                     <a class="nav-link nav-top" href="package.html">Package</a>
+                     <a class="nav-link nav-top {{ request()->is('package') ? 'active' : '' }}" href="{{ route('package') }}">Package</a>
                  </li>
              </ul>
              <ul class="navbar-nav text-center">
@@ -52,12 +52,12 @@
                          </div>
                      </li>
                  @else
-                     <a href="{{ route('login') }}" class="nav-link btn btn-info mx-3 my-1 text-white fw-bold">
+                     <a href="{{ route('login') }}" class="nav-link btn mx-3 my-1 text-white fw-bold btn-login" style="background-color: #A67B5B">
                          Log in
                      </a>
 
                      @if (Route::has('register'))
-                         <a href="{{ route('register') }}" class="nav-link btn btn-secondary mx-3 my-1 text-white fw-bold">
+                         <a href="{{ route('register') }}" class="nav-link btn mx-3 my-1 text-white fw-bold btn-regis">
                              Register
                          </a>
                      @endif

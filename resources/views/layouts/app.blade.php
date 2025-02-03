@@ -103,6 +103,7 @@ https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css
         <script src="
         https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox.min.js
         "></script>
+        @stack('js')
     </body>
 
     </html>

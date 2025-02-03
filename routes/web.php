@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\back\UserController;
+use App\Http\Controllers\front\HomeController;
 use App\Http\Controllers\back\GalleryController;
 use App\Http\Controllers\back\PackageController;
 use App\Http\Controllers\back\CategoryController;
@@ -25,7 +26,6 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
     'index', 'store', 'update', 'destroy'
     ]);
     Route::resource('/packages', PackageController::class);
-
     Route::resource('/galleries', GalleryController::class);
     Route::resource('/users', UserController::class);
 });
@@ -34,6 +34,9 @@ Route::middleware(['auth', 'user'])->group(function () {
     Route::get('/indexuser', [DashboardController::class, 'index']);
 });
 
+Route::get('/about', [HomeController::class, 'about'])->name('about');
+Route::get('/gallery', [HomeController::class, 'gallery'])->name('gallery');
+Route::get('/package', [HomeController::class, 'package'])->name('package');
 
 require __DIR__.'/auth.php';
 // require __DIR__.'/admin-auth.php';

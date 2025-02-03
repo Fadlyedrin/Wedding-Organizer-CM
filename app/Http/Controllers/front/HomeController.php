@@ -11,4 +11,16 @@ class HomeController extends Controller
     {
         return view('front.index');
     }
+
+    public function about(){
+        return view('front.about');
+    }
+
+    public function gallery(){
+        return view('front.gallery');
+    }
+
+    public function package(){
+        return view('front.package');
+    }
 }

@@ -52,11 +52,29 @@ body h2 {
   color: #f0d06c !important;
 }
 
+.btn-regis {
+  border: 3px solid #A67B5B !important;
+  background-color: white;
+  cursor: pointer;
+
+}
+
+.btn-regis:hover {
+  background-color: #A67B5B !important;
+  color: white;
+
+}
+
+.btn-login:hover{
+  background-color: #755841 !important;
+  color: white;
+}
+
 /* Header */
 .header {
-  margin-top: 72px;
+
   height: 100vh;
-  background-image: url(../img/header.jpeg);
+  background-image: url(https://plus.unsplash.com/premium_photo-1664530452611-69a2895ce19d?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -504,7 +522,7 @@ footer {
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 50vh;
-  margin-top: 70px;
+
   background-size: cover;
 }
 
